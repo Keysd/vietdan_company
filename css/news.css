@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+:root {
+    --red-color: red;
+    --black-color: black;
+    --gray-color: gray;
+    --redlist-color: rgb(238, 138, 138);
+}
+
+* {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.main--size {
+    width: 85%;
+    margin: 0 auto;
+}
+.main__header {
+    margin-bottom: 30px;
+}
+.header__wrap {
+    margin-bottom: 80px;
+}
+
+.header {
+    font-family: "Helvetica", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2.8em;
+    color: #525252;
+    border-bottom: 1px solid #525252;
+}
+
+.header__title {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: var(--red-color);
+    font-weight: 800;
+    line-height: 1.4em;
+    font-size: 4rem;
+    border-bottom: 2px solid var(--redlist-color);
+    width: 52%;
+}
+/* .main__body {
+    height: 450px;
+} */
+.body__wrap {
+    justify-content: space-evenly;
+    width: 100%;
+    display: flex;
+}
+.wrap__title {
+    width: 50%;
+    padding: 0 20px;
+    font-family: monospace;
+}
+.wrap__img {
+    width: 50%;
+}
+.wrap__img img {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.title__main {
+    position: relative;
+    line-height: 2.5rem;
+    color: #000000;
+    font-weight: 800;
+    font-size: 24px;
+    padding-bottom: 12px;
+}
+.title__main::after {
+    content: "";
+    border-bottom: 2px solid var(--red-color);
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    left: 0;
+}
+
+.title__sub {
+    text-align: justify;
+    padding: 12px 0;
+    font-size: 1.4rem;
+    font-family: "Roboto";
+    line-height: 2.4rem;
+}
+.title__icon a {
+    color: var(--red-color);
+    font-size: 1.6rem;
+    font-family: "Roboto";
+    line-height: 2.4rem;
+}
+.title__icon i {
+    margin-left: 0.4rem;
+    transition: all ease 0.4s;
+}
+
+.title__icon a:hover i {
+    transform: translateX(150%);
+    opacity: 0.4;
+}
+
+.article {
+    min-width: 25px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    height: auto;
+    /* padding: 0px 150px; */
+}
+
+.wrap__cart {
+    width: 33%;
+    /* padding: 12px; */
+    /* height: 400px; */
+}
+
+.news {
+    margin: 20px 0px;
+}
+
+.news_header {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.news_title {
+    font-family: var(--Patua);
+    font-size: 6.5vmin;
+    color: rgb(16, 4, 4);
+}
+.news_title,
+.sub_title {
+    text-align: center;
+}
+.sub_title {
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    color: #606060;
+}
+
+.cart {
+    margin: 20px 12px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.sub_cart {
+}
+
+.cart_date {
+    font-size: 1.6rem;
+    margin: 12px 0;
+}
+.cart_img {
+    width: 100%;
+    padding-top: 70%;
+    position: relative;
+}
+.cart_img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+}
+.cart h1 a {
+    display: inline-block;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    color: #454343;
+    text-decoration: none;
+    padding-top: 16px;
+}
+.cart p {
+    padding: 0px 0 12px 0;
+    font-family: "Roboto";
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    color: rgba(0, 0, 0, 1);
+}
+
+.cart_title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.cart .aaaa {
+    font-size: 1.4rem;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(86, 86, 232);
+}
+.cart .aaaa i {
+    margin-left: 8px;
+    transform: translate(2px, 0px);
+    transition: all ease 0.4s;
+}
+
+.cart .aaaa:hover i {
+    transform: translate(25px, 2px);
+    opacity: 0.8;
+}
+
+.sub_cart h1:hover a {
+    color: red;
+}
